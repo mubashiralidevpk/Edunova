@@ -1,73 +1,37 @@
-# Welcome to your Lovable project
+Dear Sir/Madam,
 
-## Project info
+I am writing to respectfully introduce Edunova, a school and college Management Intelligence System that I have developed to bring major academic and administrative operations into one integrated digital ecosystem.
 
-**URL**: https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID
+Edunova is designed to manage admissions, classes, students, attendance, homework, examinations, AI-assisted paper checking, results, staff management, scheduling, finance, parent access, notifications, and AI-powered assistants for administrators, teachers, and students.
 
-## How can I edit this code?
+The system follows an important principle: AI assists humans, while final academic and administrative decisions remain under authorized human control. It also incorporates institution-level data isolation, role-based access, audit trails, and database-level security controls.
 
-There are several ways of editing your application.
+Edunova is currently available as a web application, with supporting desktop applications for Windows, macOS and Linux, as well as Android and iOS builds. The live platform is available for review at:
 
-**Use Lovable**
+https://edunovamis.lovable.app/
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and start prompting.
+The platform has been developed with the aim of addressing practical challenges faced by educational institutions, while providing a scalable foundation that can be adapted to institutional and educational-board requirements.
 
-Changes made via Lovable will be committed automatically to this repo.
+I would be grateful if the Federal Directorate of Education (FDE) could review Edunova and evaluate whether its features and approach could be useful for FDE educational institutions.
 
-**Use your preferred IDE**
+I would especially appreciate the opportunity to:
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+1. Present a live demonstration of the system to the relevant FDE officials.
+2. Receive technical and administrative feedback from FDE.
+3. Discuss possible improvements required to align the platform with FDE policies and workflows.
+4. Explore the possibility of conducting a pilot implementation in one or more educational institutions.
+5. If the pilot proves successful and meets FDE's requirements, discuss the possibility of broader adoption.
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+I am not requesting immediate adoption without evaluation. My primary request is for an opportunity to demonstrate the system and have it professionally reviewed.
 
-Follow these steps:
+I would be pleased to provide the complete platform documentation, technical details, security information, demonstration access, and any other material required for evaluation.
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+Thank you for your time and consideration. I would be honoured to present Edunova to the relevant officials of FDE.
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+Yours sincerely,
 
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
-```
-
-**Edit a file directly in GitHub**
-
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
-
-**Use GitHub Codespaces**
-
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
-
-## What technologies are used for this project?
-
-This project is built with:
-
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
-
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+Mubashir Ali
+Developer, Edunova
+IMCB H-9, Islamabad
+Email: mubashirali.dev.pk@gmail.com
+Edunova: https://edunovamis.lovable.app/
