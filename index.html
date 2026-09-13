@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="/favicon.png" type="image/png" />
+
+    <!-- Security headers (defense-in-depth: OWASP A03/A05/A07) -->
+    <meta http-equiv="X-Content-Type-Options" content="nosniff" />
+    <meta http-equiv="Referrer-Policy" content="strict-origin-when-cross-origin" />
+    <meta http-equiv="Permissions-Policy" content="geolocation=(self), camera=(self), microphone=()" />
+    <meta http-equiv="Strict-Transport-Security" content="max-age=63072000; includeSubDomains; preload" />
+
+    <title>Edunova — Smart School Management Platform</title>
+    <meta name="description" content="Edunova is a secure multi-school platform for attendance, results, admissions, fees and parent communication." />
+    <meta name="author" content="Edunova" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Edunova — Smart School Management Platform" />
+    <meta property="og:description" content="Attendance, results, admissions, fees and parent communication in one secure platform." />
+    <meta property="og:url" content="https://aksmsb.lovable.app/" />
+    <meta property="og:image" content="https://storage.googleapis.com/gpt-engineer-file-uploads/attachments/og-images/fc5345ea-1278-4ff0-b8fe-f11ac1ccb40e" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@Lovable" />
+    <meta name="twitter:title" content="Edunova — Smart School Management Platform" />
+    <meta name="twitter:description" content="Attendance, results, admissions, fees and parent communication in one secure platform." />
+    <meta name="twitter:image" content="https://storage.googleapis.com/gpt-engineer-file-uploads/attachments/og-images/fc5345ea-1278-4ff0-b8fe-f11ac1ccb40e" />
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "SoftwareApplication",
+        "name": "Edunova — Management Intelligence System",
+        "applicationCategory": "EducationalApplication",
+        "url": "https://aksmsb.lovable.app/",
+        "email": "info.aksmsb@gmail.com",
+        "telephone": "+92-312-2574283",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Islamabad",
+          "addressRegion": "G-10/3",
+          "addressCountry": "PK"
+        },
+        "contactPoint": {
+          "@type": "ContactPoint",
+          "contactType": "admissions",
+          "email": "info.aksmsb@gmail.com",
+          "telephone": "+92-312-2574283"
+        }
+      }
+    </script>
+  </head>
+
+  <body>
+    <div id="root">
+      <div id="boot-fallback" style="min-height:100vh;display:flex;align-items:center;justify-content:center;background:#07080d;color:#e6f1ff;font-family:system-ui,sans-serif;text-align:center;padding:24px">
+        <div>
+          <div style="width:34px;height:34px;margin:0 auto 14px;border:2px solid rgba(0,212,170,.25);border-top-color:#00d4aa;border-radius:50%;animation:bootspin .8s linear infinite"></div>
+          <p style="opacity:.7;font-size:13px">Loading Edunova…</p>
+        </div>
+      </div>
+    </div>
+    <style>@keyframes bootspin{to{transform:rotate(360deg)}}</style>
+    <noscript><p style="color:#e6f1ff;background:#07080d;padding:24px">JavaScript is required to use Edunova.</p></noscript>
+    <script id="edunova-entry" type="module" src="/src/main.tsx"></script>
+    <script>
+      // Recovery watchdog. Slow mobile networks and embedded app webviews can
+      // legitimately need longer to download and parse the application bundle,
+      // so never force an automatic reload while the entry script is loading.
+      (function () {
+        var entryFailed = false;
+        var entry = document.getElementById('edunova-entry');
+        if (entry) entry.addEventListener('error', function () { entryFailed = true; });
+        function mounted() {
+          var r = document.getElementById('root');
+          return !!r && !document.getElementById('boot-fallback') && r.children.length > 0;
+        }
+        setTimeout(function () {
+          if (mounted()) return;
+          var el = document.getElementById('boot-fallback');
+          if (el) {
+            el.innerHTML =
+              '<div style="max-width:420px"><h1 style="font-size:19px;margin:0 0 8px">Edunova could not finish loading</h1>' +
+              '<p style="opacity:.7;font-size:13px;margin:0 0 16px">' + (entryFailed ? 'The application file could not be downloaded.' : 'The connection is taking longer than expected.') + '</p>' +
+              '<div style="display:flex;gap:10px;justify-content:center;flex-wrap:wrap">' +
+              '<button onclick="location.reload()" style="padding:10px 18px;border-radius:10px;border:0;background:#00d4aa;color:#02120e;font-weight:600;cursor:pointer">Try again</button>' +
+              '<button id="edunova-clear" style="padding:10px 18px;border-radius:10px;border:1px solid rgba(255,255,255,.18);background:transparent;color:#e6f1ff;font-weight:600;cursor:pointer">Clear data &amp; reload</button>' +
+              '</div></div>';
+            var btn = document.getElementById('edunova-clear');
+            if (btn) btn.onclick = function () {
+              try { localStorage.clear(); sessionStorage.clear(); } catch (e) {}
+              var path = location.pathname || '/';
+              location.replace(path + (path.indexOf('?') === -1 ? '?' : '&') + 'refresh=' + Date.now());
+            };
+          }
+        }, 45000);
+      })();
+    </script>
+  </body>
+</html>

@@ -1,0 +1,16 @@
+# Edunova — Ammar Khan Shaheed Model School For Boys
+
+> A next-generation school management system for Ammar Khan Shaheed Model School For Boys (G-10/3, Islamabad) and partner schools. Public surfaces let parents apply for admission and check published student results without an account.
+
+## Pages
+
+- [Home](/): School overview, live platform stats, and entry points to all public services.
+- [Apply for Admission](/apply): Submit an admission application to a partner school — no account required.
+- [Admission Status](/admission-history): Look up the status of a previously submitted admission application.
+- [Public Result Portal](/results): Parents can check published student results by school, class, and roll number.
+
+## Optional
+
+- [Sign In](/auth/login): Account access for teachers, students, and administrators.
+- [Register a School](/auth/register): Sign up as the Principal/Admin of a new school on the platform.
+- [Parent Login](/auth/parent-login): OTP-based login for parents to view their child's full profile.
